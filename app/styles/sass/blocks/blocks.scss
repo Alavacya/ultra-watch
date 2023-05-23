@@ -1,0 +1,45 @@
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 88.8%;
+  color: #ffffff;
+  background-color: $accent;
+  text-decoration: none;
+  width: 220px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.35s ease;
+  border: 1px solid transparent;
+  &:active,
+  &:hover {
+    background-color: $w;
+    color: $textcolor;
+    border: 1px solid $textcolor;
+  }
+}
+
+@media (max-width: 1200px) {
+  .link {
+    font-size: 16px;
+    width: 200px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 640px) {
+  .link {
+    font-size: 14px;
+    width: 160px;
+    height: 40px;
+  }
+}
